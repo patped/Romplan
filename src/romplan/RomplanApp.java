@@ -77,8 +77,12 @@ public class RomplanApp extends Application {
         vBox.getChildren().add(new Label("Registrerte timer"));
         
         Label[] timer = 
-            {new Label("CSCI 1301 se hvor langt dette kan gå før det går helt over til andre enden da"), new Label("CSCI 1302"), 
-            new Label("CSCI 2410"), new Label("CSCI 3720")};
+            {new Label(
+                "CSCI 1301 se hvor langt dette kan gå før det går helt "
+                + "over til andre enden da"), 
+            new Label("CSCI 1302"), 
+            new Label("CSCI 2410"), 
+            new Label("CSCI 3720")};
         
         for (Label time : timer) {
             VBox.setMargin(time, new Insets(0,0,0,15));
