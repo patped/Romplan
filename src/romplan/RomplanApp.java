@@ -75,16 +75,11 @@ public class RomplanApp extends Application {
         VBox vBox = new VBox(15);
         vBox.setPadding(new Insets(20,20,20,20));
         vBox.getChildren().add(new Label("Registrerte timer"));
+        Reservasjon[] data = Data.hent();
         
-        Label[] timer = 
-            {new Label(
-                "CSCI 1301 se hvor langt dette kan gå før det går helt "
-                + "over til andre enden da"), 
-            new Label("CSCI 1302"), 
-            new Label("CSCI 2410"), 
-            new Label("CSCI 3720")};
-        
-        for (Label time : timer) {
+        for (int i=0;i<data.length;i++) {
+            Label time = new Label();
+            time.setText(data[i].toString());
             VBox.setMargin(time, new Insets(0,0,0,15));
             vBox.getChildren().add(time);
         }
