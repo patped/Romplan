@@ -22,7 +22,7 @@ public class Data {
     public static Reservasjon[] hent() {
         try {
             String[] data;
-            int antall = 0;
+            int antall;
             Scanner leser;
             Reservasjon[] resTab;
             File fil = new File(FILNAVN);
