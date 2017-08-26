@@ -28,7 +28,7 @@ public class Data {
             File fil = new File(FILNAVN);
             leser = new Scanner(fil);
             antall = Integer.parseInt(leser.nextLine());
-            resTab = new Reservasjon[antall-1];
+            resTab = new Reservasjon[antall];
             int i = 0;
             do {
                 data = leser.nextLine().split(";");
