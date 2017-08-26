@@ -10,13 +10,14 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static javax.swing.JOptionPane.showInputDialog;
 
 /**
  *
  * @author patrick
  */
 public class Data {
-    private static final String FILNAVN = "data.txt";
+    private static final String FILNAVN = showInputDialog("hvor ligger filen");
     
     public static Reservasjon[] hent() {
         try {
