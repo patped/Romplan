@@ -14,7 +14,7 @@ import java.io.File;
 public class IData implements Data {
     
     @Override
-    public void hente() {
+    public Reservasjon[] hente() {
     }
 
     @Override

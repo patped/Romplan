@@ -10,6 +10,6 @@ package romplan;
  * @author patrick
  */
 public interface Data {
-    public void hente();
+    public Reservasjon[] hente();
     public void lagre();
 }
