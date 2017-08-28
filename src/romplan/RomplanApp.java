@@ -46,13 +46,13 @@ public class RomplanApp extends Application {
         pane.add(new TextField(), 1, 1);
         pane.add(new Label("Romnr"), 2, 0);
         pane.add(new TextField(), 2, 1);
-        pane.add(new Label("Navn"), 0, 2);
-        pane.add(new TextField(), 0, 3);
-        pane.add(new Label("Time til"), 1, 2);
-        pane.add(new TextField(), 1, 3);
+        pane.add(new Label("Navn"), 3, 0);
+        pane.add(new TextField(), 3, 1);
+        pane.add(new Label("Time til"), 4, 0);
+        pane.add(new TextField(), 4, 1);
         Button btRegistrer = new Button("Registrer");
-        pane.add(btRegistrer, 2,3);
-        GridPane.setHalignment(btRegistrer, HPos.CENTER);
+        pane.add(btRegistrer, 5,1);
+        GridPane.setHalignment(btRegistrer, HPos.RIGHT);
         
         pane2.setLeft(getVBox());
         
